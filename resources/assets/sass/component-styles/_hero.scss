@@ -21,16 +21,16 @@ $search-spacing: .6em;
 .hero-fullscreen {
 	height: 350px;
 
-	@media (min-width: 930px) {
-		height: 650px;
+	@media (min-width: 380px) and (max-width: 689px) {
+		height: 450px;
 	}
 
 	@media (min-width: 690px) and (max-width: 929px) {
 		height: 550px;
 	}
 
-	@media (min-width: 380px) and (max-width: 689px) {
-		height: 450px;
+	@media (min-width: 930px) {
+		height: 650px;
 	}
 }
 

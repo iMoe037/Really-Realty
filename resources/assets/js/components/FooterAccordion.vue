@@ -12,8 +12,8 @@
 				<ul class="list-unstyled accordion-list" v-if="section.show">
 					<li v-for="link in section.links"> 
 						<a>{{ link }}</a>
-					</li>	
-					<hr class="footer-hr">
+					</li>
+					<hr class="footer-hr-bottom">	
 				</ul>	
 		</div>
 	</div>

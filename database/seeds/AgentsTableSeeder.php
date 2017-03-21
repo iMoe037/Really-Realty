@@ -19,11 +19,12 @@ class AgentsTableSeeder extends Seeder
         $faker = Faker::create();
         foreach (range(1,25) as $index) 
         {
+            // print('Being called');
             DB::table('agents')->insert([
                 'first_name' => $faker->firstName,
                 'last_name' => $faker->lastName,
                 'email' => $faker->unique()->freeEmail,
-                'phone' => $faker->unique()->phoneNumber,
+                'phone' => $faker->unique()->e164PhoneNumber,
                 'agent_photo' => $this->images[$index]
             ]);
         }
