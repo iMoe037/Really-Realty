@@ -1,0 +1,94 @@
+// Card Specific Variables
+$card-width: 225px;
+$card-height: 375px;
+$picture-height: 60%;
+$contact-height: 40%;
+$name-size: 20px;
+$contact-font-size: 16px;
+$line-height: 30px;
+
+// Agent Card Component
+.agent-card {
+  max-width: $card-width;
+  max-height: $card-height;
+  min-height: $card-height;
+  height: $card-height;
+  border: 1px solid $default-border;
+  margin: 0 15px 30px 15px;
+  & a {
+    text-decoration: none;
+  }
+}
+
+// Change font size to variable
+.agent-card-name {
+  color: $black;
+  font-size: $name-size;
+  font-weight: 400;
+  display: block;
+
+  &:hover {
+    color: $black;
+  }
+}
+
+.agent-card-image-wrapper {
+  display: block;
+  width: 100%;
+  max-width: $card-width;
+  max-height: $picture-height;
+  height: 100%;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.agent-card-email {
+  color: $black;
+  font-weight: 400px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+
+  &:hover {
+    color: $black;
+  }
+}
+
+.agent-card-phone {
+  color: lighten($black, 50%);
+  display: block;
+
+  &:hover {
+    color: lighten($black, 50%);
+  }
+}
+
+.agent-card-contact {
+  padding: 15px;
+  display: block;
+  width: calc(#{$card-width} - 2px);
+  min-height: $contact-height;
+  max-width: $card-width;
+  font-size: 16px;
+  line-height: 30px;
+  background-color: $white;
+}
+
+// Agents Component
+.card-container {
+  @extend .container;
+
+  @media (min-width: 768px) {
+    width: 795px;
+  }
+
+  @media (min-width: 1020px) {
+		width: 1050px;
+	}
+  	
+  @media (min-width: 1305px) {
+		width: 1305px;
+	}
+
+}

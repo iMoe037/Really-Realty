@@ -85,6 +85,11 @@ $footer-header-padding: 20px;
 	border-top: 1px solid $text-color;
 }
 
+.footer-hr-bottom {
+	@extend .footer-hr;
+	margin-left: -60px;
+}
+
 .footer-accordion-chevron {
 	font-weight: 400;
 	font-size: 18px;

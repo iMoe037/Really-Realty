@@ -12,10 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('home');
+  return view('home');
 });
 
-Route::get('/agents', function () {
+Route::get('/agents', function() {
 	return view('agents');
 });
 
@@ -34,3 +34,10 @@ Route::get('/rent', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+// Api Routes
+Route::group(['prefix' => 'api'], function () {
+	Route::get('/agents', 'AgentsController@index');
+});
+
+// Route::get('/agents', 'AgentsController@index');

@@ -16,6 +16,8 @@ require('./bootstrap');
 // Vue.component('example', require('./components/Example.vue'));
 Vue.component('footerAccordion', require('./components/FooterAccordion.vue'));
 Vue.component('hero', require('./components/Hero.vue'));
+Vue.component('agent-card', require('./components/Agent-Card.vue'));
+Vue.component('agents', require('./components/Agents.vue'));
 
 const app = new Vue({
     el: '#app'
