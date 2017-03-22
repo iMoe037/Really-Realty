@@ -38,6 +38,7 @@ Route::get('/home', 'HomeController@index');
 // Api Routes
 Route::group(['prefix' => 'api'], function () {
 	Route::get('/agents', 'AgentsController@index');
+	Route::post('/contact', 'ContactController@store');
 });
 
 // Route::get('/agents', 'AgentsController@index');

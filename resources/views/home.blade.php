@@ -9,6 +9,6 @@
     :white-font-color="true"
     sub-text="Looking for a home to buy? Search from thousands of real-time listings for sale in New York. Start by entering your search preferences."></hero>
 <div class="container">
-    <section> More Content Yay</section>
+    <section class="section"> More Content Yay</section>
 </div>
 @endsection

@@ -1,16 +1,11 @@
 <template>
 	<section>
-	<!-- 
-	Default SVG Background
-	If no Background Change Font Color
-	Remove oppacity if no background
-	 -->
 		<div class="hero-bg-image"
 			v-bind:class="[whiteFontColor ? 'hero-white-font' : 'hero-black-font', { 
 				'hero-fullscreen' : fullScreen,
 				'hero-default-bg' : !bgImage
 				}]"
-			v-bind:style="[bgImage ? { 'background-image' : `url(${bgImage})` } : '']">
+			v-bind:style="[bgImage ? { 'background-image' : `url(${bgImage})`, 'background-size' : 'cover' } : '']">
 			<div class="full-width"
 				v-bind:class="{ 'hero-opacity-div': bgImage }">
 				<div class="container full-height">

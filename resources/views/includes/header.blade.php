@@ -30,7 +30,7 @@
                 <!-- Authentication Links -->
                 <li><a href="{{ url('agents') }}">Agents</a></li>
                 <li><a href="">Buy</a></li>
-                <li><a href="">Sell</a></li>
+                <li><a href="{{ url('sell') }}">Sell</a></li>
                 <li><a href="">Rent</a></li>
                 @if (Auth::guest())
                     <li><a href="{{ route('login') }}">Login</a></li>

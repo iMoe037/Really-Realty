@@ -3,6 +3,7 @@ $search-spacing: .6em;
 .hero-bg-image {
 	height: 430px;
 	display: flex;
+	// background-size: cover;
 }
 
 .hero-default-bg {
@@ -42,8 +43,8 @@ $search-spacing: .6em;
 
 .hero-title-content {
 	@extend .full-height;
-	align-items: center;
-	justify-content: center;
+	@extend .align-i-c;
+	@extend .justify-c-c;
 }
 
 .hero-title {
