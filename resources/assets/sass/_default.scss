@@ -1,3 +1,8 @@
+body {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
 .no-padding {
 	padding: 0 !important;
 }
@@ -12,6 +17,10 @@
 
 .full-width {
 	width: 100%;
+}
+
+.center {
+	text-align: center;
 }
 
 .flex-row {

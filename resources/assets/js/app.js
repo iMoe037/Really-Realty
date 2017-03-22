@@ -13,11 +13,15 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+// Add extensions to Vue
+Vue.use(require('vee-validate'));
+
 // Vue.component('example', require('./components/Example.vue'));
 Vue.component('footerAccordion', require('./components/FooterAccordion.vue'));
 Vue.component('hero', require('./components/Hero.vue'));
 Vue.component('agent-card', require('./components/Agent-Card.vue'));
 Vue.component('agents', require('./components/Agents.vue'));
+Vue.component('sell-form', require('./components/Sell-Form.vue'));
 
 const app = new Vue({
     el: '#app'

@@ -12,6 +12,9 @@
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+// Animate CSS
+@import "node_modules/animate.css/animate";
+
 // Components
 @import "footer";
 @import "header";
@@ -19,3 +22,4 @@
 // Vue Components
 @import "component-styles/hero";
 @import "component-styles/agent";
+@import "component-styles/sell-form";
