@@ -74,7 +74,7 @@
 						<a>Homes for Rent</a>
 					</p>
 					<a>Terms & Conditions and Privacy Policy</a>
-					<p class="no-padding">Really Realty is a licensed real estate broker and abides by Equal Housing Opportunity laws. &copy; Really Realty. All Rights Reserved. 2017 . 
+					<p class="no-padding">{{ config('app.name' )}} is a licensed real estate broker and abides by Equal Housing Opportunity laws. &copy; {{ config('app.name' )}}. All Rights Reserved. 2017 . 
 					<a href="https://nytm.org/made" target="_blank">Made in NYC</a>
 					</p>
 				</div>

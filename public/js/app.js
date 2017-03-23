@@ -35537,7 +35537,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }), _vm._v(" "), _c('h2', [_vm._v("Great! An agent will contact you shortly!")])]) : _vm._e()])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "flex-column just-c-c align-i-c sell-form-title-container"
+    staticClass: "flex-column just-c-c align-i-c sell-form-title-container center"
   }, [_c('h2', {
     staticClass: "no-margin"
   }, [_vm._v("Start by connecting with a local expert")]), _vm._v(" "), _c('h3', [_vm._v("We'll match you with an agent who knows your area best.")])])

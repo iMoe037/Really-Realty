@@ -1,7 +1,7 @@
 <template>
   <section class="section">
     <div class="container">
-      <div class="flex-column just-c-c align-i-c sell-form-title-container">
+      <div class="flex-column just-c-c align-i-c sell-form-title-container center">
         <h2 class="no-margin">Start by connecting with a local expert</h2>
         <h3>We'll match you with an agent who knows your area best.</h3>
       </div>

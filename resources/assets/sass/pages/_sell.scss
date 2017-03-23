@@ -1,0 +1,97 @@
+// Sell Variables
+
+$sell-stats-space-horizontal: 25px;
+$sell-stats-space-vertical: 10px;
+$sell-stats-margin: 20px;
+
+.sell-container {
+  margin: 60px auto 40px;
+}
+
+.sell-stats-background {
+  background-color: $brand-primary;
+  color: $white;
+}
+
+.sell-stats-container {
+  padding: $sell-stats-space-vertical 0 $sell-stats-space-vertical 0;
+
+  &.left {
+    padding-left: $sell-stats-space-horizontal;
+    padding-right: $sell-stats-space-horizontal;
+  }
+  &.right {
+    padding-right: $sell-stats-space-horizontal;
+  }
+}
+
+.sell-stats-value {
+  font-size: 45px;
+  border-bottom: 1px solid lighten($brand-primary, 20%);
+}
+
+.sell-stats-field {
+  color: darken($white, 10%);
+  line-height: 18px;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.sell-stats-header {
+  border-top: 1px solid lighten($brand-primary, 20%);
+  border-bottom: 1px solid lighten($brand-primary, 20%);
+  padding: $sell-stats-space-horizontal 0 $sell-stats-space-horizontal 0;
+  margin-bottom: $sell-stats-margin;
+}
+
+.sell-info-container{
+  background-color: darken($white, 10%);
+  width: 80%;
+  padding: 25px;
+  margin: $sell-stats-margin auto $sell-stats-margin;
+}
+
+.sell-info-title {
+  margin-top: 0;
+  line-height: 30px;
+  font-size: 24px;
+}
+
+.sell-info-text {
+  margin-bottom: 0;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.sell-image {
+  margin-top: $sell-stats-margin;
+  margin-bottom: $sell-stats-margin;
+  width: 80%;
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    width: 100%;
+    margin: 32px;
+  }
+  @media (min-width: $screen-md-min) {
+    width: 66%;
+  }
+  @media (min-width: $screen-lg-min) {
+    width: 53%;
+  }
+}
+
+.sell-legal-background {
+  background-color: darken($brand-primary, 5%);
+  color: darken($white, 15%);
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+.sell-legal-size {
+  width: 80%;
+  margin: 20px auto;
+  @media (max-width: $screen-sm-min) {
+    width: 90%;
+  }
+}
