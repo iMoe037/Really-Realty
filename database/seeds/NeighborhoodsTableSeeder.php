@@ -2,8 +2,8 @@
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
-use Phaza\LaravelPostgis\Eloquent\PostgisTrait;
-use Phaza\LaravelPostgis\Geometries\Point;
+// use Phaza\LaravelPostgis\Eloquent\PostgisTrait;
+// use Phaza\LaravelPostgis\Geometries\Point;
 
 
 class NeighborhoodsTableSeeder extends Seeder
@@ -14,32 +14,46 @@ class NeighborhoodsTableSeeder extends Seeder
      * @return void
      */
     
-    use PostgisTrait;
+    // use PostgisTrait;
     
     public function run()
     {
         $neighborhood_file = file_get_contents(realpath(__DIR__ .'/neighborhood.json'));
         $neighborhood_data = json_decode($neighborhood_file, true);
 
-        function addLatLong ($string)
+        // function addLatLong ($string)
+        // {
+        //     return json_decode($string, true);
+        // }
+
+        function get_transportation($typeTrans, $data) 
         {
-            return json_decode($string, true);
+            if (is_null($data)) {
+                return null;
+            }
+
+            $data_decoded = json_decode($data, true);
+            $data_reencoded = json_encode($data_decoded[$typeTrans]);
+            return $data_reencoded;
+
         }
 
         foreach ( $neighborhood_data as &$neighborhood ) {
+            // get_transportation('Rail', $neighborhood["transportation"]);
 
-            $latLong = addLatLong($neighborhood["center"]);
+            // $latLong = addLatLong($neighborhood["center"]);
             // print_r($latLong);
 
             DB::table('neighborhoods')->insert([
                 'name' => $neighborhood["neighborhood"],
                 'borough' => $neighborhood["borough"],
-                // 'center' => new Point($latLong[0],$latLong[1]),
-                'tags' => ($neighborhood['tags'] ? $neighborhood['tags'] : null),
-                'summary' => ($neighborhood['summary'] ? $neighborhood['summary'] : null),
+                'center' => $neighborhood["center"],
+                'boundary' => $neighborhood["polygon"],
+                'rails' => get_transportation('Rail', $neighborhood['transportation']),
+                'buses' => get_transportation('Bus', $neighborhood['transportation']),
+                'tags' => $neighborhood['tags'],
+                'summary' => $neighborhood['summary'],
             ]);
-            // print_r($neighborhood["center"]);
-            // echo gettype($neighborhood["center"]);
         }
     }
 }

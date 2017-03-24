@@ -36,15 +36,15 @@
         </div>
     </section>
     <section class="section">
-        <div class="container center home-neighborhoods-container">
-            <div class="col-xs-12">
-                <h1>Explore our neighborhoods</h1>
-                <h4>No one knows are cities as well as we do. Browse our neighborhood guides to learn about the most desirable places to live in New York.</h4>
+        <div class="container home-neighborhoods-container">
+            <div class="row">
+                <div class="col-xs-12 center">
+                    <h1>Explore our neighborhoods</h1>
+                    <h4>No one knows are cities as well as we do. Browse our neighborhood guides to learn about the most desirable places to live in New York.</h4>
+                </div>
             </div>
-            <div>
-                <h3>Neighborhoods Coming Soon!</h3>
-            </div>
-            <button class="btn-primary btn-lg">See More Neighborhoods</button>
+            <main-neighborhoods></main-neighborhoods>
+            <button class="btn-primary btn-lg center-button">See More Neighborhoods</button>
         </div>
     </section>
 @endsection
