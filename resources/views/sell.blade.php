@@ -13,7 +13,7 @@
         <h1>Our agents, your advantage</h1>
         <h4>As a local real estate brokerage, trust that we know your area, and that we'd connect you to a trusted agent.</h4>
     </div>
-    <div class="row sell-container">
+    <div class="row sell-container center-section">
         <div class="col-xs-12 col-sm-6">
             <img class="img-responsive center-block" src="/images/store-front.jpg" alt="Visit our brokerage" />
             
@@ -34,14 +34,12 @@
     </div>
 </section>
 <section class="section">
-    <div class="container">
-        <div class="row center">
-            <h1>Your home, everywhere</h1>
-            <h5>Our Agents will market, and advertise your home to the right target audience across the most effective channels. Our knowledge and experience will elevate the style and story of your home.</h5>
-        </div>
+    <div class="container center">
+        <h1>Your home, everywhere</h1>
+        <h5>Our Agents will market, and advertise your home to the right target audience across the most effective channels. Our knowledge and experience will elevate the style and story of your home.</h5>
     </div>
     <div class="row diamond-background margin-top">
-        <div class="container">
+        <div class="container center-section">
             <div class="col-xs-12 col-sm-6">
                 <div class="sell-info-container center">
                     <p class="sell-info-title">Few days on market means more value for you</p>
@@ -50,7 +48,6 @@
             </div>
             <div class="col-xs-12 col-sm-6">
                 <img class="img-responsive center-block sell-image" src="/images/for-sale.jpeg" alt="Sell your home" />
-                <!--<img class="img-responsive center-block sell-image" src="/images/open-house.jpg" alt="Sell your home" />-->
             </div>
         </div>
     </div>
