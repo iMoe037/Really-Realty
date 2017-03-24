@@ -61,8 +61,25 @@ body {
 	height: 100%;
 }
 
+.center-section {
+	@extend .flex-row;
+	@extend .align-i-c;
+
+	@media (max-width: 768px) {
+    display: block;
+  }
+}
+
 input:focus {
 	outline: none;
+}
+
+button:focus {
+	outline: none;
+}
+
+button {
+	border: 0 solid transparent;
 }
 
 .diamond-background {

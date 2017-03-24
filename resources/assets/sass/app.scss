@@ -6,11 +6,11 @@
 // Variables
 @import "variables";
 
-// Defaults
-@import "default";
-
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+// Defaults
+@import "default";
 
 // Animate CSS
 @import "node_modules/animate.css/animate";
@@ -21,6 +21,7 @@
 
 // Pages
 @import "pages/sell";
+@import "pages/home";
 
 // Vue Components
 @import "component-styles/hero";

@@ -1,0 +1,30 @@
+$home-margin: 20px;
+.home-image {
+  margin: $home-margin auto $home-margin;
+}
+
+.home-neighborhood-container {
+  padding: $home-margin;
+}
+
+.home-neighborhood-container-content {
+  background-color: $white;
+  padding: $home-margin;
+  @media(max-width: $screen-sm-min) {
+    margin-top: $home-margin;
+  }
+}
+
+.home-neighborhood-title {
+  margin-top: 0;
+}
+
+.home-neighborhood-text {
+  margin: $home-margin 0;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+.home-neighborhoods-container {
+  padding-bottom: 60px;
+}

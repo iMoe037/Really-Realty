@@ -5,7 +5,10 @@ $sell-stats-space-vertical: 10px;
 $sell-stats-margin: 20px;
 
 .sell-container {
-  margin: 60px auto 40px;
+  padding: $sell-stats-margin 0 $sell-stats-margin 0;
+  @media (max-width: $screen-sm-min) {
+    padding: 0;
+  }
 }
 
 .sell-stats-background {
@@ -67,7 +70,7 @@ $sell-stats-margin: 20px;
 .sell-image {
   margin-top: $sell-stats-margin;
   margin-bottom: $sell-stats-margin;
-  width: 80%;
+  width: 50%;
 
   @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
     width: 100%;
