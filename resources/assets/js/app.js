@@ -22,6 +22,8 @@ Vue.component('hero', require('./components/Hero.vue'));
 Vue.component('agent-card', require('./components/Agent-Card.vue'));
 Vue.component('agents', require('./components/Agents.vue'));
 Vue.component('sell-form', require('./components/Sell-Form.vue'));
+Vue.component('neighborhood-card', require('./components/Neighborhood-Card.vue'));
+Vue.component('main-neighborhoods', require('./components/Main-Neighborhoods.vue'));
 
 const app = new Vue({
     el: '#app'

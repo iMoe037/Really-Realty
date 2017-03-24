@@ -1,0 +1,52 @@
+// Neighborhood Card Specfic Variables
+$neighborhood-card-width: 310px;
+$neighborhood-card-height: 270px;
+$neighborhood-card-pic-height: 75%;
+$neighborhood-card-blur: 1px;
+
+// Neighborhood Card Component
+
+.neighborhood-card-container {
+  padding-top: 20px;
+}
+
+.neighborhood-card {
+  max-width: $neighborhood-card-width; 
+  max-height: $neighborhood-card-height;
+  height: $neighborhood-card-height;
+  width: $neighborhood-card-width;
+  border: 1px solid $default-border;
+  margin: 0 15px 30px 15px;
+  & a {
+    text-decoration: none;
+  }
+}
+
+.neighborhood-card-image-wrapper {
+  display: block;
+  width: 100%;
+  max-width: $neighborhood-card-width;
+  max-height: $neighborhood-card-pic-height;
+  height: 100%;
+  background-size: cover;
+  background-position: 50%;
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.neighborhood-card-title-container {
+  padding: 10px 20px 10px 20px;
+}
+
+.neighborhood-card-title {
+  font-size: 1.3em;
+  font-weight: 600;
+  margin: 0;
+}
+
+.neighborhood-card-subtitle {
+  font-size: .9em;
+  margin: 0;
+}

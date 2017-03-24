@@ -1,12 +1,12 @@
 <template>
-  <section class="card-container section">
+  <section class="agent-card-container section">
     <div class="flex-row flex-wrap justify-c-c">
       <agent-card
         v-for="agent in agents"
-        v-bind:agent-name="combineNames(agent.first_name, agent.last_name)"
-        v-bind:agent-image="agent.agent_photo"
-        v-bind:agent-email="agent.email"
-        v-bind:agent-phone="agent.phone"></agent-card>
+        :agent-name="combineNames(agent.first_name, agent.last_name)"
+        :agent-image="agent.agent_photo"
+        :agent-email="agent.email"
+        :agent-phone="agent.phone"></agent-card>
     </div>
   </section>
 </template>

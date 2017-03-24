@@ -18,10 +18,10 @@ class CreateNeighborhoodsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('borough');
-            $table->point('center')->nullable();
-            $table->polygon('boundary')->nullable();
-            $table->string('rails')->nullable();
-            $table->string('buses')->nullable();
+            $table->string('center');
+            $table->text('boundary');
+            $table->text('rails')->nullable();
+            $table->text('buses')->nullable();
             $table->string('tags')->nullable();
             $table->text('summary')->nullable();
             $table->timestamps();
